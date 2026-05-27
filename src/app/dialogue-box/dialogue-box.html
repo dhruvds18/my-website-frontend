@@ -1,0 +1,38 @@
+<!-- SUCCESS / ERROR DIALOG -->
+<div
+  *ngIf="showDialog"
+  class="fixed inset-0 z-[9999] flex h-screen w-screen items-center justify-center bg-black/40 backdrop-blur-sm"
+>
+  <div
+    class="w-[90%] max-w-sm rounded-2xl border border-white/10 bg-gradient-to-br from-gray-800 via-gray-900 to-[#2a014d] p-6 text-white shadow-2xl animate-fade-in"
+  >
+    <!-- ICON -->
+    <div class="flex justify-center">
+      <div
+        [ngClass]="isSuccess ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'"
+        class="flex h-16 w-16 items-center justify-center rounded-full text-3xl"
+      >
+        {{ isSuccess ? '✓' : '✕' }}
+      </div>
+    </div>
+
+    <!-- MESSAGE -->
+    <div class="mt-4 text-center">
+      <h2 class="text-2xl font-bold">
+        {{ isSuccess ? 'Success!' : 'Failed!' }}
+      </h2>
+
+      <p class="mt-2 text-gray-300">
+        {{ isSuccess ? 'Message sent successfully.' : 'Failed to send message. Please try again.' }}
+      </p>
+    </div>
+
+    <!-- BUTTON -->
+    <button
+      (click)="closeDialog()"
+      class="mt-6 w-full rounded-lg bg-purple-600 px-4 py-3 font-medium transition hover:bg-purple-700 cursor-pointer"
+    >
+      OK
+    </button>
+  </div>
+</div>

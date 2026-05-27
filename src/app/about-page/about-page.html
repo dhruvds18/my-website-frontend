@@ -1,0 +1,282 @@
+<div class="animate-slide-down px-4 sm:px-6 lg:px-10 py-6">
+  <!-- HERO SECTION -->
+  <div class="flex flex-col lg:flex-row items-center lg:items-start gap-10">
+    <!-- PROFILE IMAGE -->
+    <div class="flex justify-center w-full lg:w-auto">
+      <img
+        src="assets/images/profile_image.png"
+        class="w-[300px] h-[300px] rounded-full border-4 border-gray-600 object-cover aspect-square lg:mt-10"
+      />
+    </div>
+
+    <!-- HERO CONTENT -->
+    <div class="flex flex-col gap-4 text-center lg:text-left max-w-2xl">
+      <p class="text-[28px] sm:text-[34px] font-semibold leading-tight">
+        Passionate Developer
+        <span class="text-purple-500">who loves to build.</span>
+      </p>
+
+      <p class="text-[15px] sm:text-[16px] text-gray-300 leading-relaxed">
+        I'm a passionate software developer with experience in building scalable, efficient and
+        user-friendly web applications. I enjoy turning complex problems into simple, presentable
+        and intuitive solutions.
+      </p>
+
+      <p class="text-[15px] sm:text-[16px] text-gray-300 leading-relaxed">
+        I love writing clean code, learning new technologies and constantly improving my skills.
+      </p>
+
+      <p class="text-[15px] sm:text-[16px] text-gray-300 leading-relaxed">
+        My project paper titled “A Real Time Traffic Sign Classification Model Based on
+        Convolutional Neural Networks” won best paper at ICCPCT, 2023 which was hosted in
+        association with IEEE.
+      </p>
+
+      <!-- BUTTONS -->
+      <div
+        class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto justify-center lg:justify-start items-center"
+      >
+        <a
+          href="assets/documents/Resume.pdf"
+          download="Dhruv_Saligram_CV.pdf"
+          class="bg-purple-500 hover:bg-purple-700 text-center hover:cursor-pointer text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md"
+        >
+          Download CV
+        </a>
+
+        <button
+          (click)="copyEmail()"
+          class="border border-gray-300 bg-black hover:bg-gray-700 hover:cursor-pointer text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md"
+        >
+          Let's Connect
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <div class="overflow-hidden w-full mt-12">
+    <div class="flex animate-marquee gap-6">
+      <!-- CARD -->
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/availability.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">1+</p>
+            <p class="text-gray-300">Years of Experience</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/frontend_development.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">3+</p>
+            <p class="text-gray-300">Projects Completed</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/ui_ux_design.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">20+</p>
+            <p class="text-gray-300">Technologies</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HACKATHON CARD -->
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/problem_solver.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">3+</p>
+            <p class="text-gray-300">Hackathons Attended</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DUPLICATE SET -->
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/availability.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">1+</p>
+            <p class="text-gray-300">Years of Experience</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/frontend_development.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">3+</p>
+            <p class="text-gray-300">Projects Completed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/ui_ux_design.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">20+</p>
+            <p class="text-gray-300">Technologies</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/problem_solver.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">3+</p>
+            <p class="text-gray-300">Hackathons Attended</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DUPLICATE SET -->
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/availability.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">1+</p>
+            <p class="text-gray-300">Years of Experience</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/frontend_development.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">3+</p>
+            <p class="text-gray-300">Projects Completed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/ui_ux_design.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">20+</p>
+            <p class="text-gray-300">Technologies</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="flex items-center gap-4">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/problem_solver.png" class="w-20 h-20" />
+          </div>
+
+          <div>
+            <p class="text-[40px] font-bold">3+</p>
+            <p class="text-gray-300">Hackathons Attended</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BEYOND CODE -->
+  <div
+    class="bg-gradient-to-br from-gray-800 via-gray-900 to-[#2a014d] rounded-lg text-white p-6 mt-8 w-full lg:w-[70%] border border-white/10 shadow-lg mx-auto"
+  >
+    <p class="text-[24px] font-semibold">Beyond Code</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+      <!-- ITEM -->
+      <div class="animate-slide-right">
+        <div class="flex items-center gap-3">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/football_enthusiast.png" class="w-12 h-12" />
+          </div>
+
+          <p class="text-[15px]">Football Enthusiast</p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="animate-slide-right delay-200">
+        <div class="flex items-center gap-3">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/video_gamer.png" class="w-12 h-12" />
+          </div>
+
+          <p class="text-[15px]">Video Gamer</p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="animate-slide-right delay-500">
+        <div class="flex items-center gap-3">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/loves_to_travel.png" class="w-12 h-12" />
+          </div>
+
+          <p class="text-[15px]">Travel Lover</p>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="animate-slide-right delay-500">
+        <div class="flex items-center gap-3">
+          <div class="bg-[#350069] rounded-lg p-2">
+            <img src="assets/images/podcast_listener.png" class="w-12 h-12" />
+          </div>
+
+          <p class="text-[15px]">Podcast Listener</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <p class="text-[12px] text-center text-gray-400 mt-16">
+    © 2026 Dhruv Saligram. All rights reserved.
+  </p>
+</div>

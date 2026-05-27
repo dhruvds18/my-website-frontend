@@ -1,0 +1,31 @@
+<div
+  class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 bg-gradient-to-br from-gray-800 via-gray-900 to-[#2a014d] rounded-lg text-white mx-3 p-4 border border-white/10 shadow-lg"
+>
+  <!-- Left Content -->
+  <div class="flex items-start sm:items-center gap-3">
+    <img
+      src="assets/images/lets_work_together.png"
+      class="w-12 h-12 flex-shrink-0"
+    />
+
+    <div>
+      <p class="text-[15px] sm:text-[16px] font-medium leading-snug">
+        Let's build something amazing together!
+      </p>
+
+      <p class="text-[12px] sm:text-[13px] text-gray-300 mt-1 leading-relaxed">
+        I'm currently open to new opportunities and collaborations.
+      </p>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="w-full sm:w-auto">
+    <button
+      (click)="copyEmail()"
+      class="w-full sm:w-auto bg-purple-500 hover:bg-purple-700 hover:cursor-pointer text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md"
+    >
+      Contact Me
+    </button>
+  </div>
+</div>

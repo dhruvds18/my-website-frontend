@@ -1,0 +1,195 @@
+<div class="animate-slide-down px-4 sm:px-6 lg:px-10 py-6">
+  <!-- Heading -->
+  <div class="text-center">
+    <p class="text-3xl sm:text-4xl font-bold leading-tight">
+      Let's Build Something
+      <span class="text-purple-500">Amazing</span>
+      Together!
+    </p>
+
+    <p class="text-sm sm:text-base text-gray-300 mt-3">
+      Have a project, idea or opportunity? I'd love to hear from you.
+    </p>
+
+    <p class="text-sm sm:text-base text-gray-300">Let's create something awesome!</p>
+  </div>
+
+  <!-- Contact Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-8">
+    <!-- Email -->
+    <div class="bg-gray-800 rounded-xl p-5 text-center">
+      <div
+        class="bg-[#350069] rounded-full p-2 w-16 h-16 flex items-center justify-center mb-3 mx-auto"
+      >
+        <img src="assets/images/email.png" class="w-10 h-10 object-contain" />
+      </div>
+
+      <p class="font-semibold">Email</p>
+
+      <p class="text-gray-400 text-sm break-words mt-1">dhruvdsaligram@gmail.com</p>
+
+      <p class="text-gray-400 text-sm mt-1">I usually reply within 24 hours</p>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="bg-gray-800 rounded-xl p-5 text-center">
+      <div
+        class="bg-[#350069] rounded-full w-16 h-16 flex items-center justify-center mb-3 mx-auto"
+      >
+        <img src="assets/images/linkedin.png" class="w-16 h-16 object-contain" />
+      </div>
+
+      <p class="font-semibold">LinkedIn</p>
+
+      <p class="text-gray-400 text-sm break-words mt-1">
+        linkedin.com/in/dhruv-saligram-58bb54266/
+      </p>
+
+      <p class="text-gray-400 text-sm mt-1">Let's connect professionally and share ideas</p>
+    </div>
+
+    <!-- GitHub -->
+    <div class="bg-gray-800 rounded-xl p-5 text-center">
+      <div
+        class="bg-[#350069] rounded-full w-16 h-16 flex items-center justify-center mb-3 mx-auto"
+      >
+        <img src="assets/images/github_transparent.png" class="w-10 h-10 object-contain" />
+      </div>
+
+      <p class="font-semibold">GitHub</p>
+
+      <p class="text-gray-400 text-sm break-words mt-1">github.com/dhruvds18</p>
+
+      <p class="text-gray-400 text-sm mt-1">Check out my repositories and projects</p>
+    </div>
+
+    <!-- Location -->
+    <div class="bg-gray-800 rounded-xl p-5 text-center">
+      <div
+        class="bg-[#350069] rounded-full w-16 h-16 flex items-center justify-center mb-3 mx-auto"
+      >
+        <img src="assets/images/location.png" class="w-16 h-16 object-contain" />
+      </div>
+
+      <p class="font-semibold">Location</p>
+
+      <p class="text-gray-400 text-sm mt-1">Bangalore, India</p>
+
+      <p class="text-gray-400 text-sm mt-1">Open to remote opportunities as well</p>
+    </div>
+  </div>
+
+  <!-- Main Section -->
+  <div class="bg-gray-800 rounded-xl p-6 mt-8 max-w-6xl mx-auto">
+    <div class="flex flex-col lg:flex-row gap-10">
+      <!-- Left Side -->
+      <div class="lg:w-1/2">
+        <p class="text-2xl font-semibold">Let's Talk About Your Project</p>
+
+        <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+          I'm available for freelance work, full-time opportunities, and exciting collaborations.
+        </p>
+
+        <!-- Features -->
+        <div class="mt-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/tick.png" class="w-12 h-12 object-contain" />
+            <p class="text-sm">Available for new projects</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <img src="assets/images/tick.png" class="w-12 h-12 object-contain" />
+            <p class="text-sm">Quick response time</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <img src="assets/images/tick.png" class="w-12 h-12 object-contain" />
+            <p class="text-sm">Quality work guaranteed</p>
+          </div>
+        </div>
+
+        <p class="text-gray-400 text-sm mt-6 leading-relaxed">
+          Feel free to reach out. I'd love to discuss how I can help you!
+        </p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="lg:w-1/2">
+        <form #contactForm="ngForm">
+          <p class="text-2xl font-semibold mb-5">Send Me a Message</p>
+
+          <!-- Name -->
+          <div class="mb-4">
+            <label class="text-sm">Name</label>
+
+            <input
+              type="text"
+              [(ngModel)]="name"
+              name="name"
+              placeholder="Your Name"
+              class="w-full border border-gray-600 bg-black/30 text-white rounded-lg px-4 py-3 mt-2 focus:outline-none focus:border-purple-500"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-4">
+            <label class="text-sm">Email</label>
+
+            <input
+              type="email"
+              [(ngModel)]="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full border border-gray-600 bg-black/30 text-white rounded-lg px-4 py-3 mt-2 focus:outline-none focus:border-purple-500"
+            />
+          </div>
+
+          <!-- Subject -->
+          <div class="mb-4">
+            <label class="text-sm">Subject</label>
+
+            <input
+              type="text"
+              [(ngModel)]="subject"
+              name="subject"
+              placeholder="Subject"
+              class="w-full border border-gray-600 bg-black/30 text-white rounded-lg px-4 py-3 mt-2 focus:outline-none focus:border-purple-500"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="mb-4">
+            <label class="text-sm">Message</label>
+
+            <textarea
+              [(ngModel)]="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              class="w-full border border-gray-600 bg-black/30 text-white rounded-lg px-4 py-3 mt-2 focus:outline-none focus:border-purple-500 resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Button -->
+          <button
+            type="button"
+            (click)="sendMessage(contactForm)"
+            class="w-full bg-purple-500 hover:bg-purple-700 transition-all duration-300 text-white px-4 py-3 rounded-lg mt-2 cursor-pointer font-medium"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <p class="text-[12px] text-center text-gray-400 mt-16">
+    © 2026 Dhruv Saligram. All rights reserved.
+  </p>
+</div>
+
+<app-dialogue-box
+  [showDialog]="showDialog"
+  [isSuccess]="isSuccess"
+  (dialogClosed)="closeDialog()"
+></app-dialogue-box>
