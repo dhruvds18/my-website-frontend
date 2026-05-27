@@ -33,7 +33,7 @@ sendMessage(form: NgForm) {
     message: this.message,
   };
 
-  this.http.post('http://localhost:3000/api/contact', formData)
+  this.http.post('https://my-website-backend-v8pl.onrender.com/api/contact', formData)
     .subscribe({
       next: (response) => {
         console.log('Message sent successfully', response);
