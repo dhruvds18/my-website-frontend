@@ -48,13 +48,14 @@
           <img
             src="assets/images/profile_image.png"
             class="w-[300px] h-[300px] min-w-[300px] min-h-[300px] rounded-full border-4 border-gray-600 object-cover aspect-square"
+            loading="lazy"
+            alt="Profile Image"
           />
         </div>
       </div>
 
       <!-- OTHER LEFT SIDE SECTIONS -->
       <div class="mt-16">
-
         <section id="work_experience">
           <app-work-experience></app-work-experience>
         </section>
@@ -62,15 +63,20 @@
         <!-- EDUCATION -->
         <div class="mt-[24px]">
           <app-education></app-education>
-        </div>  
+        </div>
       </div>
-    </div>  
+    </div>
 
     <!-- RIGHT SIDE -->
     <div class="w-full lg:w-1/2">
       <!-- HEADER -->
       <div class="flex items-center gap-3 mb-8 justify-center lg:justify-start">
-        <img src="assets/images/skills_and_technologies.png" class="w-10 h-10 sm:w-12 sm:h-12" />
+        <img
+          src="assets/images/skills_and_technologies.png"
+          class="w-10 h-10 sm:w-12 sm:h-12"
+          loading="lazy"
+          alt="Skills and Technologies"
+        />
 
         <p class="text-[22px] font-semibold">Skills and Technologies</p>
       </div>
@@ -100,32 +106,62 @@
 
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/angular_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/angular_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="Angular"
+            />
             <p class="text-[12px]">Angular</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/react_transparent.png" class="w-10 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/react_transparent.png"
+              class="w-10 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="React"
+            />
             <p class="text-[12px]">React</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/html_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/html_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="HTML5"
+            />
             <p class="text-[12px]">HTML5</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/css_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/css_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="CSS3"
+            />
             <p class="text-[12px]">CSS3</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/bootstrap_transparent.png" class="w-12 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/bootstrap_transparent.png"
+              class="w-12 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="Bootstrap"
+            />
             <p class="text-[12px]">Bootstrap</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/tailwind_transparent.png" class="w-8 h-6 mx-auto mb-2 mt-1" />
+            <img
+              src="assets/images/tailwind_transparent.png"
+              class="w-8 h-6 mx-auto mb-2 mt-1"
+              loading="lazy"
+              alt="Tailwind"
+            />
             <p class="text-[12px] mt-4">Tailwind</p>
           </div>
         </div>
@@ -137,32 +173,62 @@
 
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/python_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/python_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="Python"
+            />
             <p class="text-[12px]">Python</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/node_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/node_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="Node js"
+            />
             <p class="text-[12px]">Node js</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/express_transparent.png" class="w-8  h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/express_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="Express js"
+            />
             <p class="text-[12px]">Express js</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/rest_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/rest_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="REST API"
+            />
             <p class="text-[12px]">REST API</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/net_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/net_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt=".NET Core"
+            />
             <p class="text-[12px]">.NET Core</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/java_transparent.png" class="w-12 h-10 mx-auto" />
+            <img
+              src="assets/images/java_transparent.png"
+              class="w-12 h-10 mx-auto"
+              loading="lazy"
+              alt="Java"
+            />
             <p class="text-[12px]">Java</p>
           </div>
         </div>
@@ -174,27 +240,52 @@
 
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/git_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/git_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="Git"
+            />
             <p class="text-[12px]">Git</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/github_transparent.png" class="w-12 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/github_transparent.png"
+              class="w-12 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="Github"
+            />
             <p class="text-[12px]">Github</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-4 text-center">
-            <img src="assets/images/vscode_transparent.png" class="w-8 h-8 mx-auto mb-2" />
+            <img
+              src="assets/images/vscode_transparent.png"
+              class="w-8 h-8 mx-auto mb-2"
+              loading="lazy"
+              alt="VS Code"
+            />
             <p class="text-[12px]">VS Code</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-2 text-center">
-            <img src="assets/images/postman_transparent.png" class="w-12 h-12 mx-auto" />
+            <img
+              src="assets/images/postman_transparent.png"
+              class="w-12 h-12 mx-auto"
+              loading="lazy"
+              alt="Postman"
+            />
             <p class="text-[12px]">Postman</p>
           </div>
 
           <div class="bg-gray-800 rounded-xl p-2 text-center">
-            <img src="assets/images/docker_transparent.png" class="w-12 h-12 mx-auto" />
+            <img
+              src="assets/images/docker_transparent.png"
+              class="w-12 h-12 mx-auto"
+              loading="lazy"
+              alt="Docker"
+            />
             <p class="text-[12px]">Docker</p>
           </div>
         </div>
